@@ -1,0 +1,387 @@
+@font-face {
+  font-family: "MinhaFonte";
+  src: url("../fonts/Aexir.otf") format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  height: 200vh;
+}
+
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #555;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Button */
+.btn {
+  padding: 8px 20px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* blocos 1*/
+
+h1 {
+  font-family: "MinhaFonte", sans-serif;
+}
+
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.apple-block-all {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+}
+
+.apple-block-left {
+  height: 100vh;
+  width: 32vw;
+  border-right: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.apple-left-text {
+  width: 80%;
+  padding: 20px 20px 100px 20px;
+}
+
+.apple-left-text h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.apple-left-text p {
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding: 10px;
+  text-indent: 20px;
+}
+
+.apple-block-left h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.apple-block-center {
+  height: 90vh;
+  width: 35vw;
+}
+
+.apple-block-right {
+  height: 100vh;
+  width: 32vw;
+  border-left: 1px solid black;
+  display: flex;
+  align-items: end;
+}
+
+.apple-right-01 {
+  width: 80%;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: flex-end;
+  /* joga o conteúdo pra direita */
+  align-items: flex-end;
+  /* joga o conteúdo pra baixo */
+}
+
+.apple-right-01 h2 {
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  /* define o ponto da rotação */
+  margin: 10px;
+  /* opcional, só pra dar respiro */
+}
+
+
+.apple-right-02 {
+  width: 80%;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: flex-end;
+  /* joga o conteúdo pra direita */
+  align-items: flex-end;
+  /* joga o conteúdo pra baixo */
+}
+
+.apple-right-02 h2 {
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  /* define o ponto da rotação */
+  margin: 10px;
+  /* opcional, só pra dar respiro */
+}
+
+.apple-right-03 {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  /* joga o conteúdo pra direita */
+  align-items: flex-end;
+  /* joga o conteúdo pra baixo */
+}
+
+.apple-right-03 h2 {
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  /* define o ponto da rotação */
+  margin: 10px;
+  /* opcional, só pra dar respiro */
+}
+
+.text-right-3 {
+  height: 100vh;
+}
+
+.text-right-audio {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding-bottom: 100px;
+}
+
+.text-right-audio img {
+  width: 50px;
+  margin: 0px 0px 55px 50px;
+  cursor: pointer;
+}
+
+.text-right-audio p {
+  margin: 0px 0px 70px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.headset {
+  position: absolute;
+  top: 30%;
+  font-size: 18rem;
+  z-index: -1;
+}
+
+.airpods {
+  position: absolute;
+  top: 15%;
+  width: 600px;
+}
+
+.apple-block-left-02 {
+  height: 100vh;
+  width: 32vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.left-list-02 {
+  width: 100%;
+  padding: 50px 20px;
+  opacity: 0;
+}
+
+.apple-block-left-02 h2 {
+  font-size: 2rem;
+  opacity: 0;
+}
+
+.left-list-02 ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  list-style-type: circle;
+}
+
+.left-list-02 ul>li {
+  padding: 3px 0px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.left-img-02 {
+  width: 100%;
+  padding: 0px 50px 100px 0px;
+  display: flex;
+  justify-content: end;
+  opacity: 0;
+}
+
+.left-img-02 img {
+  width: 350px;
+  height: 450px;
+}
+
+.apple-block-center-02 {
+  width: 35vw;
+  height: 100vh;
+}
+
+.right-img-02 {
+  width: 32vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  right: 3%;
+  bottom: 15%;
+  opacity: 0;
+}
+
+.right-img-02 video {
+  width: 30rem;
+}
+
+.right-text-02 {
+  width: 20vw;
+  position: absolute;
+  top: 70%;
+  right: 8%;
+  opacity: 0;
+}
+
+.right-text-02 p {
+  color: black;
+  text-indent: 20px;
+}
+
+.scrollbar {
+  position: fixed;
+  left: 1%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 20vh;
+  /* altura da barra (ajuste aqui) */
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  z-index: 9999;
+  display: flex;
+  align-items: flex-start;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.thumb {
+  width: 100%;
+  height: 40px;
+  /* valor inicial — JS irá ajustar */
+  background: #000000;
+  border-radius: 6px;
+  transform: translateY(0);
+  transition: background .12s;
+  cursor: default;
+}
+
+/* Efeito ao passar o mouse */
+.thumb:hover {
+  background: #255f94;
+}
+
+html {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Chrome/Safari */

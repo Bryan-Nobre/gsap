@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Button */
+.btn {
+    padding: 8px 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* =========== block 01 ===================*/
+
+.block__parallax-01 {
+    width: 100%;
+    height: 450vh;
+    overflow: hidden;
+}
+
+.span-one {
+    padding-left: 80px;
+    z-index: 12;
+}
+
+.block__parallax-01 img {
+    position: absolute;
+}
+
+.block__parallax-01 h1 {
+    position: absolute;
+}
+
+.pedra {
+    top: 70%;
+    left: 25%;
+    width: 1000px;
+    z-index: 10;
+}
+
+.bota-frente {
+    width: 550px;
+    top: 15%;
+    left: 25%;
+    transform: rotate(15deg);
+    z-index: 11;
+}
+
+.bota-tras {
+    width: 550px;
+    top: 20%;
+    left: 43%;
+    transform: rotate(-15deg);
+    z-index: 9;
+}
+
+.parallax-h1 {
+    font-size: 5rem;
+    top: 10%;
+    left: 58%;
+    color: white;
+    z-index: 11;
+    text-shadow: 1px 1px 0px black;
+}
+
+.h2-text-bt-frente {
+    opacity: 0;
+    position: absolute;
+    left: 80%;
+    width: 20vw;
+}
+
+.h2-text-bt-frente h2 {
+    font-size: 50px;
+}
+
+.h2-text-bt-frente p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-indent: 10px;
+}
+
+.h2-text-bt-tras {
+    opacity: 0;
+    position: absolute;
+    left: 0%;
+    width: 20vw;
+}
+
+.h2-text-bt-tras h2 {
+    font-size: 50px;
+}
+
+.h2-text-bt-tras p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-indent: 10px;
+}
+
+.block-text-01 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-01-left {
+    width: 35vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 15;
+}
+
+.text-left-top {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.text-left-top__left {
+    font-size: 4.5rem;
+}
+
+.text-left-top__right {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.text-left-top__right span {
+    padding-left: 40px;
+}
+
+.text-left-center {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0px 20px 10px 20px;
+    text-indent: 20px;
+}
+
+.text-left-tc {
+    height: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-left-bottom {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    height: 50%;
+    padding: 20px;
+    text-shadow: 1px 1px 0px black;
+}
+
+.text-left-bottom .span-02 {
+    padding-left: 80px;
+}
+
+.text-left-bottom .span-01 {
+    padding-left: 40px;
+}
+
+.text-02-right {
+    width: 20%;
+    height: 90vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-02-right h1 {
+    color: black;
+    font-size: 1rem;
+}
+
+.vd-bots {
+    width: 90%;
+    height: 45vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.vd-bots img {
+    width: 100%;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    background-color: white;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.video-final {
+    position: relative;
+    height: 100vh;
+    /* ocupa a tela inteira */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    /* proporção 16:9 */
+    min-height: 100vh;
+    min-width: 177.77vh;
+    /* proporção invertida */
+    transform: translate(-50%, -50%);
+    border: 0;
+
+}
+
+
+/* Botões agora ficam em fluxo normal */
+.controls {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+.btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.329);
+    color: #070707;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .2s, transform .2s;
+}
+
+.btn:hover {
+    background: rgba(255, 191, 0, 0.8);
+    transform: translateY(-2px);
+}
+
+.btn.active {
+    background: #ffbf00;
+    color: #000;
+    font-weight: bold;
+}
