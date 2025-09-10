@@ -322,7 +322,7 @@ nav a:hover::after {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 5%;
+    top: 8%;
     left: 2%;
 }
 
@@ -346,4 +346,5 @@ nav a:hover::after {
     background: #ffbf00;
     color: #000;
     font-weight: bold;
+
 }
