@@ -28,7 +28,7 @@ tl.to(".bota-frente", { y: "+=800", rotation: "+=30", duration: 1.5, width: 1000
     .to(".h2-text-bt-frente", { opacity: 1, y: "+=1300", x: -380, duration: 1.5 }, "-=1.5")
     .to(".bota-tras", { x: "-=400", y: "+=2200", rotation: "-=35", duration: 1.5, width: 1100, overwrite: "auto" })
     .to(".h2-text-bt-tras", { opacity: 1, y: "+=2700", x: 250, duration: 1.5 }, "-=1.5")
-    .to(".video-final", {x: 0, y: "-=770", duration: 1, ease: "linear", zIndex: 100,},);
+    .to(".video-final", {x: 0, y: "-=790", duration: 1, ease: "linear", zIndex: 100,},);
     
 
 
